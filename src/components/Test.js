@@ -1,7 +1,7 @@
 import React from "react";
 import './Test.css';
 import {useState, useEffect} from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Test = () => {
     const qList = [
@@ -80,7 +80,18 @@ const Test = () => {
             setQuestion(qList[count + 1]);
             setAnswerA(a1List[count + 1].answer);
             setAnswerB(a2List[count + 1].answer);
+        }else if(count === 11){
+            setAnswerA(a1List[11].answer);
+            setAnswerB(a2List[11].answer);
+            setQuestion('결과는???');
+            setCount(count + 1);
         }
+    }
+
+    const navigate = useNavigate();
+
+    const navigateToResult = () => {
+        navigate("/Result");
     }
 
     return(
@@ -91,6 +102,9 @@ const Test = () => {
             <div className="btnBox">
                 <button className="btn1" onClick={handleAnswerA}>{answerA}</button>
                 <button className="btn1" onClick={handleAnswerB}>{answerB}</button>
+            </div>
+            <div>
+                <button onClick={navigateToResult}>결과보러가기</button>
             </div>
         </div>
     )
