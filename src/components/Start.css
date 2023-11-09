@@ -1,0 +1,26 @@
+body{
+    background-color: gray;
+}
+
+.logo{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2{
+    margin: 40px;
+}
+
+.startBtn{
+    width: 50%;
+    font-size: 35px;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}

@@ -1,0 +1,39 @@
+body{
+    background-color: gray;
+}
+
+.bigBox{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.questionBox{
+    display: flex;
+    height: 20%;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+}
+
+.btnBox{
+    display: flex;
+    align-items: center;
+}
+
+.btn1{
+    margin: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    width: auto;
+    font-size: 30px;
+    background-image: linear-gradient(to right, #29323c, #485563, #2b5876, #4e4376);
+    box-shadow: 0 4px 15px 0 rgba(45, 54, 65, 0.75);
+    color: white;
+    object-fit: cover;
+}
